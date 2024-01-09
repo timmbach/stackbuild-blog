@@ -1,0 +1,14 @@
+<div class="search-container">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Search Blog:</mat-label>
+      <input
+        matInput
+        placeholder="Enter a keyword..."
+        [(ngModel)]="enteredSearchValue"
+        (input)="onSearchTextChanged()"
+        name="search"
+      />
+    </mat-form-field>
+  </form>
+</div>
